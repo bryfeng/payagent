@@ -1,0 +1,102 @@
+.header {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .headerContent {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerContent {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.pageTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.notificationButton {
+  border-radius: 9999px;
+  background-color: white;
+  padding: 0.25rem;
+  color: var(--gray-400);
+}
+
+.notificationButton:hover {
+  color: var(--gray-500);
+}
+
+.notificationButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.notificationIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.userContainer {
+  margin-left: 0.75rem;
+  position: relative;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+}
+
+.userAvatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+  background-color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInitials {
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.userName {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
